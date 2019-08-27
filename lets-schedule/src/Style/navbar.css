@@ -1,0 +1,20 @@
+.top{
+    
+    background:black;
+    color:yellow;
+}
+.tag{
+    margin-left:22%;
+}
+.nbt{
+    background:#222222;
+    color:white; 
+    border:none;
+
+}
+.platform{
+    font-size:15px;
+}
+#button-1{
+    background:green;
+}
