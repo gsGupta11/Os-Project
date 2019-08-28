@@ -2,7 +2,7 @@ import React from 'react';
 import '../Style/navbar.css'
 class Navbar extends React.Component{
     handleClick=(e)=>{
-        if (e.target.id=="button-1"){
+        if (e.target.id==="button-1"){
             e.target.id="none";
             var a=document.getElementById("none");
             a.id="button-1";

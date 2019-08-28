@@ -1,0 +1,39 @@
+.left{
+    padding-top:50px;
+    padding-left:0px;
+    background:#eee;
+    margin-left:0px;
+
+}
+*{
+    padding-left:0px;
+    margin-left:0px;
+}
+.Algos{
+    margin-top:50px;
+}
+.algobt{
+    padding:2%;
+    width:100%;
+    margin-top:1%;
+    border-right: none;
+    border-left:none;
+    border-radius:0px; 
+    border-color:#02f8086b;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.lefttag{
+    word-spacing: 2%;
+    font-size:25px;
+    margin-bottom:2%;
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: 300;
+}
+.first{
+    margin-top:1%;
+}
+#clicked{
+    background:#02f8086b;
+
+}
