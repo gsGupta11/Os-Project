@@ -1,18 +1,35 @@
 import React from 'react';
 import '../Style/navbar.css'
 class Navbar extends React.Component{
+    state={
+        status:'Single Algorithm'
+    }
     handleClick=(e)=>{
         if (e.target.id==="button-1"){
-            e.target.id="none";
             var a=document.getElementById("none");
             a.id="button-1";
+            e.target.id="none";
+            
+            this.setState({
+                status:document.getElementById("button-1").innerHTML
+
+            });
+            this.props.addStatus(this.state.status);
+            
 
         }
         else{
             var a=document.getElementById("button-1");
             a.id="none";
             e.target.id="button-1";
+           
+            this.setState({
+                status:document.getElementById("button-1").innerHTML
+            })
+            this.props.addStatus(this.state.status);
+            
         }
+
     }
       render(){
         return(
