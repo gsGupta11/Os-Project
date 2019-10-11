@@ -1,16 +1,11 @@
 import React from 'react';
-import '../Style/LeftTable.css'
-class LeftTable extends React.Component{
+import '../Style/LeftTable1.css';
+import {Link,Navlink} from 'react-router-dom';
+class LeftTable1 extends React.Component{
     handleClick=(e)=>{
         if(this.props.status=="Single Algorithm"){
             if(e.target.className=="btn btn-default algobt none"){
-                // var a= document.getElementsByClassName("btn btn-default algobt clicked");
-                // for(var i=0;i<a.lenght;i++){
-                //     a[i].className="btn btn-default algobt none";
-                // }
-                console.log("clicked")
                 e.target.className="btn btn-default algobt clicked";
-                console.log(e.target.className);
             }
             else{
                 e.target.className="btn btn-default algobt none";
@@ -28,13 +23,6 @@ class LeftTable extends React.Component{
             a[7].className="btn btn-default algobt none";
             a[8].className="btn btn-default algobt none";
             e.target.className="btn btn-default algobt clicked";
-            // var i=0;
-            // var len = a.length;
-            // console.log(len);
-            // for(i=0;i<len;i++){
-            //     a[i].className="btn btn-default algobt none";
-            //     console.log(a[i]);
-            // }
         }
 
     }
@@ -45,7 +33,7 @@ class LeftTable extends React.Component{
                         <div className="col-xs-12">
                             <div className="Algos">
                                 <p className="lefttag">Choose from wide range of Algorithms - </p><hr></hr>
-                                <button className="btn btn-default algobt none" onClick={this.handleClick} >First Come First Serve (FCFS)</button>
+                                <Link to ="/fcfs"><button className="btn btn-default algobt none" onClick={this.handleClick} >First Come First Serve (FCFS)</button></Link>
                                 <button className="btn btn-default algobt none" onClick={this.handleClick} >Round Robin Algorithm (RRA)</button>
                                 <button className="btn btn-default algobt none" onClick={this.handleClick} >Shortest Job First (SJF)</button>
                                 <button className="btn btn-default algobt none" onClick={this.handleClick} >Priority Scheduling</button>
@@ -62,4 +50,4 @@ class LeftTable extends React.Component{
     }
 }
 
-export default LeftTable;
+export default LeftTable1;

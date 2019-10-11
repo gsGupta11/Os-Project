@@ -1,6 +1,6 @@
 let qu = 0;
 function FCFS(arrivalTime, burstTime){
-  let output = 'P\tAT\tBT\tCT\tTT\tWT\n',
+  let output = 'PATBTCTTTWT',
       objCollection = [],
       AT = [],
       BT = [],
@@ -32,7 +32,7 @@ function FCFS(arrivalTime, burstTime){
     waiting = WT(turnaround,BT[x]);
 
     //storing values in output string, AT and BT array are used.
-    output += `${x+1}\t${AT[x]}\t${BT[x]}\t${completion}\t${turnaround}\t${waiting}\n`;
+    output += `${x+1}${AT[x]}${BT[x]}${completion}${turnaround}${waiting}`;
 
     //pushing to array att and awt for later purposes.
     att.push(turnaround);
@@ -79,4 +79,8 @@ function averageWT (wtValues, noOfValues) {
 
 //Calling main function FCFS, parameters are just for tests.
 //You can play around for the values.
-console.log(FCFS([0, 1, 2, 3, 4,5], [10, 3, 5, 2, 1,3]));
+var a = FCFS([0, 1, 2, 3, 4,5], [10, 3, 5, 2, 1,3]);
+for(i=0;i<a.length;i++){
+  console.log(a[i]);
+  // console.log("\n");
+}

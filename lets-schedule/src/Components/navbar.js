@@ -1,5 +1,5 @@
 import React from 'react';
-import '../Style/navbar.css'
+import '../Style/navbar.css';
 class Navbar extends React.Component{
     state={
         status:'Single Algorithm'
